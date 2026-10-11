@@ -7,7 +7,7 @@ WORKDIR /app
 
 # Install deps
 COPY . .
-RUN npm ci
+RUN npm ci --workspaces=false
 
 # Copy sources and build
 COPY public ./public
